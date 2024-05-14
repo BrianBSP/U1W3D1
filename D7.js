@@ -114,7 +114,8 @@ console.log(lunghezzaStringhe(str1));
 console.log("------ Es 08 -------");
 
 // Non riesco a completare l'esercizio con la funzione forEach
-function numeriDispari() {
+// Niente non riesco a farlo funzionare
+/* function numeriDispari() {
   const numeri = [];
   for (let i = 0; i < 100; i++) {
     numeri.push(i);
@@ -125,15 +126,19 @@ function numeriDispari() {
     element % 2 !== 0;
   });
 }
-console.log("Numeri Dispari", numeriDispari());
+console.log("Numeri Dispari", numeriDispari()); */
 // Invece con il For sono riuscito in maniera abbastanza semplice
-/* let numeri = [];
-for (let i = 1; i <= 99; i++) {
-  if (i % 2 !== 0) {
-    numeri.push(i);
+function numeriDispari() {
+  let numeri = [];
+  for (let i = 1; i <= 99; i++) {
+    if (i % 2 !== 0) {
+      numeri.push(i);
+    }
   }
+  return numeri;
 }
-console.log(numeri); */
+console.log(numeriDispari());
+
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
   {
@@ -253,7 +258,15 @@ const movies = [
 /* ESERCIZIO 9 (forEach)
   Scrivi una funzione per trovare il film più vecchio nell'array fornito.
 */
-
+console.log("--------- Es 09 --------");
+function filmVecchio(object) {
+  const array = [];
+  const yearOfRelease = movies.forEach((element) => {
+    array = movies.Year;
+  });
+  return array;
+}
+console.log(filmVecchio(movies));
 /* ESERCIZIO 10
   Scrivi una funzione per ottenere il numero di film contenuti nell'array fornito.
 */
